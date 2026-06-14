@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+body{
+    margin: 5%;
+    background-color: #F9FAFB;
+    color: #1F2937;
+}
+
+@utility medium-cards{
+    @apply font-bold my-2
+}
+
+@layer components{
+    .list-star{
+        @apply list-none pl-6
+    }
+}
+
+
+.list-star li::before{
+    content: "*";
+    display: inline-block;
+    width: 2px;
+
+}
